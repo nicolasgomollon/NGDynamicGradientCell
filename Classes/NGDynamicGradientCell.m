@@ -102,6 +102,9 @@
 - (void)drawRect:(CGRect)rect {
 	[super drawRect:rect];
 	
+	[messageLabel setFont:[UIFont preferredFontForTextStyle:UIFontTextStyleBody]];
+	[messageLabel setTextColor:self.sent?[UIColor whiteColor]:[UIColor blackColor]];
+	
 	CGSize messageConstraints = CGSizeMake(190.0f, MAXFLOAT);
 	CGSize messageSize = [messageLabel.text boundingRectWithSize:messageConstraints
 														 options:NSStringDrawingUsesLineFragmentOrigin
@@ -113,7 +116,6 @@
 		originX = self.bounds.size.width - messageSize.width - originX;
 	
 	[messageLabel setFrame:CGRectMake(originX, 7.0f, messageSize.width, messageSize.height)];
-	[messageLabel setTextColor:self.sent?[UIColor whiteColor]:[UIColor blackColor]];
 	
 	[self setScrollViewContentOffset:CGPointZero];
 	

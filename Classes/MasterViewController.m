@@ -41,6 +41,14 @@ NSString *const NGMessageSentKey = @"sent";
 	[self.objects addObject:@{NGMessageContentKey: @"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ut malesuada ante. Ut eros dui malesuada non velit sed, porttitor accumsan nibh. Maecenas ac fringilla nisi, non tincidunt turpis. Suspendisse posuere tempus sem in cursus massa volutpat sit amet.", NGMessageSentKey: @YES}];
 	[self.objects addObject:@{NGMessageContentKey: @"This is an example of a received message.", NGMessageSentKey: @NO}];
 	[self.objects addObject:@{NGMessageContentKey: @"This is another sent message.", NGMessageSentKey: @YES}];
+	
+	[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(updateInterface) name:UIApplicationDidBecomeActiveNotification object:nil];
+}
+
+- (void)updateInterface {
+	// Redraw cells and recalculate their heights to account for change in system-wide dynamic type size.
+	[self.tableView beginUpdates];
+	[self.tableView endUpdates];
 }
 
 - (void)didReceiveMemoryWarning {
