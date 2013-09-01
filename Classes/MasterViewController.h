@@ -9,6 +9,9 @@
 #import <UIKit/UIKit.h>
 #import "NGDynamicGradientCell.h"
 
+extern NSString *const NGMessageContentKey;
+extern NSString *const NGMessageSentKey;
+
 @interface MasterViewController : UITableViewController {
 	NSMutableArray *objects;
 }

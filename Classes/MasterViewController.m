@@ -8,6 +8,9 @@
 
 #import "MasterViewController.h"
 
+NSString *const NGMessageContentKey = @"content";
+NSString *const NGMessageSentKey = @"sent";
+
 @implementation MasterViewController
 
 @synthesize objects;
@@ -28,6 +31,13 @@
 	
 	// Do any additional setup after loading the view.
 	self.objects = [[NSMutableArray alloc] init];
+	
+	[self.objects addObject:@{NGMessageContentKey: @"This is just a message.", NGMessageSentKey: @YES}];
+	[self.objects addObject:@{NGMessageContentKey: @"Test", NGMessageSentKey: @NO}];
+	[self.objects addObject:@{NGMessageContentKey: @"Lorem ipsum dolor sit amet.", NGMessageSentKey: @YES}];
+	[self.objects addObject:@{NGMessageContentKey: @"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ut malesuada ante. Ut eros dui malesuada non velit sed, porttitor accumsan nibh. Maecenas ac fringilla nisi, non tincidunt turpis. Suspendisse posuere tempus sem in cursus massa volutpat sit amet.", NGMessageSentKey: @YES}];
+	[self.objects addObject:@{NGMessageContentKey: @"This is an example of a received message.", NGMessageSentKey: @NO}];
+	[self.objects addObject:@{NGMessageContentKey: @"This is another sent message.", NGMessageSentKey: @YES}];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -49,8 +59,8 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
 	NGDynamicGradientCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell" forIndexPath:indexPath];
 	
-	NSDate *object = self.objects[indexPath.row];
-	cell.textLabel.text = [object description];
+	NSDictionary *object = self.objects[indexPath.row];
+	cell.textLabel.text = object[NGMessageContentKey];
 	
 	return cell;
 }
