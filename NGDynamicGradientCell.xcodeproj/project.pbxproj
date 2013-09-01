@@ -12,6 +12,10 @@
 		DACE578117D2C21B0030D3EC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DACE577317D2C21B0030D3EC /* main.m */; };
 		DACE578517D2C21B0030D3EC /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DACE577B17D2C21B0030D3EC /* Images.xcassets */; };
 		DACE578E17D2DEE90030D3EC /* NGDynamicGradientCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DACE578D17D2DEE90030D3EC /* NGDynamicGradientCell.m */; };
+		DACE57A017D2E2250030D3EC /* libSSToolkit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DACE579617D2E1D50030D3EC /* libSSToolkit.a */; };
+		DACE57A317D2E2250030D3EC /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DACE57A117D2E2250030D3EC /* MessageUI.framework */; };
+		DACE57A417D2E2250030D3EC /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DACE57A217D2E2250030D3EC /* QuartzCore.framework */; };
+		DAE1967017D2E28700F06E5D /* SSToolkitResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = DACE579A17D2E1D50030D3EC /* SSToolkitResources.bundle */; };
 		DAE58D5D17D2C0FA00260FE8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAE58D5C17D2C0FA00260FE8 /* Foundation.framework */; };
 		DAE58D5F17D2C0FA00260FE8 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAE58D5E17D2C0FA00260FE8 /* CoreGraphics.framework */; };
 		DAE58D6117D2C0FA00260FE8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAE58D6017D2C0FA00260FE8 /* UIKit.framework */; };
@@ -22,6 +26,41 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		DACE579517D2E1D50030D3EC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DACE578F17D2E1D40030D3EC /* SSToolkit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D2AAC07E0554694100DB518D;
+			remoteInfo = SSToolkit;
+		};
+		DACE579717D2E1D50030D3EC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DACE578F17D2E1D40030D3EC /* SSToolkit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = B239101D1357DC3E00ADE21B;
+			remoteInfo = SSToolkitTests;
+		};
+		DACE579917D2E1D50030D3EC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DACE578F17D2E1D40030D3EC /* SSToolkit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = B2C507EA151BA64400E94614;
+			remoteInfo = SSToolkitResources;
+		};
+		DACE579C17D2E1FD0030D3EC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DACE578F17D2E1D40030D3EC /* SSToolkit.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = D2AAC07D0554694100DB518D;
+			remoteInfo = SSToolkit;
+		};
+		DACE579E17D2E1FD0030D3EC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DACE578F17D2E1D40030D3EC /* SSToolkit.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = B2C507E9151BA64400E94614;
+			remoteInfo = SSToolkitResources;
+		};
 		DAE58D8217D2C0FA00260FE8 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = DAE58D5117D2C0FA00260FE8 /* Project object */;
@@ -42,6 +81,9 @@
 		DACE577C17D2C21B0030D3EC /* NGDynamicGradientCell-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "NGDynamicGradientCell-Info.plist"; sourceTree = "<group>"; };
 		DACE578C17D2DEE90030D3EC /* NGDynamicGradientCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NGDynamicGradientCell.h; sourceTree = "<group>"; };
 		DACE578D17D2DEE90030D3EC /* NGDynamicGradientCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NGDynamicGradientCell.m; sourceTree = "<group>"; };
+		DACE578F17D2E1D40030D3EC /* SSToolkit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SSToolkit.xcodeproj; path = SSToolkit/SSToolkit.xcodeproj; sourceTree = "<group>"; };
+		DACE57A117D2E2250030D3EC /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		DACE57A217D2E2250030D3EC /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		DAE58D5917D2C0FA00260FE8 /* NGDynamicGradientCell.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NGDynamicGradientCell.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DAE58D5C17D2C0FA00260FE8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		DAE58D5E17D2C0FA00260FE8 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -57,9 +99,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DAE58D5F17D2C0FA00260FE8 /* CoreGraphics.framework in Frameworks */,
-				DAE58D6117D2C0FA00260FE8 /* UIKit.framework in Frameworks */,
 				DAE58D5D17D2C0FA00260FE8 /* Foundation.framework in Frameworks */,
+				DAE58D6117D2C0FA00260FE8 /* UIKit.framework in Frameworks */,
+				DAE58D5F17D2C0FA00260FE8 /* CoreGraphics.framework in Frameworks */,
+				DACE57A317D2E2250030D3EC /* MessageUI.framework in Frameworks */,
+				DACE57A417D2E2250030D3EC /* QuartzCore.framework in Frameworks */,
+				DACE57A017D2E2250030D3EC /* libSSToolkit.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -110,9 +155,28 @@
 		DACE577D17D2C21B0030D3EC /* Vendor */ = {
 			isa = PBXGroup;
 			children = (
+				DACE579B17D2E1DD0030D3EC /* SSToolkit */,
 			);
 			path = Vendor;
 			sourceTree = SOURCE_ROOT;
+		};
+		DACE579017D2E1D40030D3EC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DACE579617D2E1D50030D3EC /* libSSToolkit.a */,
+				DACE579817D2E1D50030D3EC /* SSToolkitTests.app */,
+				DACE579A17D2E1D50030D3EC /* SSToolkitResources.bundle */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DACE579B17D2E1DD0030D3EC /* SSToolkit */ = {
+			isa = PBXGroup;
+			children = (
+				DACE578F17D2E1D40030D3EC /* SSToolkit.xcodeproj */,
+			);
+			name = SSToolkit;
+			sourceTree = "<group>";
 		};
 		DAE58D5017D2C0FA00260FE8 = {
 			isa = PBXGroup;
@@ -137,8 +201,10 @@
 			isa = PBXGroup;
 			children = (
 				DAE58D5C17D2C0FA00260FE8 /* Foundation.framework */,
-				DAE58D5E17D2C0FA00260FE8 /* CoreGraphics.framework */,
 				DAE58D6017D2C0FA00260FE8 /* UIKit.framework */,
+				DAE58D5E17D2C0FA00260FE8 /* CoreGraphics.framework */,
+				DACE57A217D2E2250030D3EC /* QuartzCore.framework */,
+				DACE57A117D2E2250030D3EC /* MessageUI.framework */,
 				DAE58D7E17D2C0FA00260FE8 /* XCTest.framework */,
 			);
 			name = Frameworks;
@@ -186,6 +252,8 @@
 			buildRules = (
 			);
 			dependencies = (
+				DACE579D17D2E1FD0030D3EC /* PBXTargetDependency */,
+				DACE579F17D2E1FD0030D3EC /* PBXTargetDependency */,
 			);
 			name = NGDynamicGradientCell;
 			productName = NGDynamicGradientCell;
@@ -235,6 +303,12 @@
 			mainGroup = DAE58D5017D2C0FA00260FE8;
 			productRefGroup = DAE58D5A17D2C0FA00260FE8 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = DACE579017D2E1D40030D3EC /* Products */;
+					ProjectRef = DACE578F17D2E1D40030D3EC /* SSToolkit.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				DAE58D5817D2C0FA00260FE8 /* NGDynamicGradientCell */,
@@ -243,12 +317,37 @@
 		};
 /* End PBXProject section */
 
+/* Begin PBXReferenceProxy section */
+		DACE579617D2E1D50030D3EC /* libSSToolkit.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libSSToolkit.a;
+			remoteRef = DACE579517D2E1D50030D3EC /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		DACE579817D2E1D50030D3EC /* SSToolkitTests.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = SSToolkitTests.app;
+			remoteRef = DACE579717D2E1D50030D3EC /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		DACE579A17D2E1D50030D3EC /* SSToolkitResources.bundle */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = SSToolkitResources.bundle;
+			remoteRef = DACE579917D2E1D50030D3EC /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
 /* Begin PBXResourcesBuildPhase section */
 		DAE58D5717D2C0FA00260FE8 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				DACE578517D2C21B0030D3EC /* Images.xcassets in Resources */,
+				DAE1967017D2E28700F06E5D /* SSToolkitResources.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,6 +383,16 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		DACE579D17D2E1FD0030D3EC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SSToolkit;
+			targetProxy = DACE579C17D2E1FD0030D3EC /* PBXContainerItemProxy */;
+		};
+		DACE579F17D2E1FD0030D3EC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SSToolkitResources;
+			targetProxy = DACE579E17D2E1FD0030D3EC /* PBXContainerItemProxy */;
+		};
 		DAE58D8317D2C0FA00260FE8 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = DAE58D5817D2C0FA00260FE8 /* NGDynamicGradientCell */;
@@ -368,7 +477,12 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Other Sources/NGDynamicGradientCell-Prefix.pch";
+				HEADER_SEARCH_PATHS = Vendor/SSToolkit;
 				INFOPLIST_FILE = "$(SRCROOT)/Resources/NGDynamicGradientCell-Info.plist";
+				OTHER_LDFLAGS = (
+					"-all_load",
+					"-ObjC",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -382,7 +496,12 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Other Sources/NGDynamicGradientCell-Prefix.pch";
+				HEADER_SEARCH_PATHS = Vendor/SSToolkit;
 				INFOPLIST_FILE = "$(SRCROOT)/Resources/NGDynamicGradientCell-Info.plist";
+				OTHER_LDFLAGS = (
+					"-all_load",
+					"-ObjC",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};

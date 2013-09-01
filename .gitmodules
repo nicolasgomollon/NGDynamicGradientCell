@@ -1,0 +1,3 @@
+[submodule "Vendor/SSToolkit"]
+	path = Vendor/SSToolkit
+	url = https://github.com/soffes/sstoolkit.git
