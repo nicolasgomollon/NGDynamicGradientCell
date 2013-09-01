@@ -21,7 +21,10 @@ NSString *const NGMessageSentKey = @"sent";
 }
 
 - (void)loadView {
+	[self setTitle:@"NGDynamicGradientCell"];
+	
 	self.tableView = [[UITableView alloc] init];
+	[self.tableView setContentInset:UIEdgeInsetsMake(9.0f, 0.0f, 0.0f, 0.0f)];
 	[self.tableView setSeparatorStyle:UITableViewCellSeparatorStyleNone];
 	[self.tableView registerClass:[NGDynamicGradientCell class] forCellReuseIdentifier:@"Cell"];
 }
@@ -46,6 +49,14 @@ NSString *const NGMessageSentKey = @"sent";
 }
 
 
+#pragma mark - Scroll View
+
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView {
+	for (NGDynamicGradientCell *cell in [self.tableView visibleCells])
+		[cell setScrollViewContentOffset:scrollView.contentOffset];
+}
+
+
 #pragma mark - Table View
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
@@ -56,11 +67,22 @@ NSString *const NGMessageSentKey = @"sent";
 	return self.objects.count;
 }
 
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+	NSDictionary *object = self.objects[indexPath.row];
+	NSString *messageText = object[NGMessageContentKey];
+	
+	return [NGDynamicGradientCell heightForMessage:messageText];
+}
+
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
 	NGDynamicGradientCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell" forIndexPath:indexPath];
 	
 	NSDictionary *object = self.objects[indexPath.row];
-	cell.textLabel.text = object[NGMessageContentKey];
+	NSString *messageText = object[NGMessageContentKey];
+	BOOL messageSent = [object[NGMessageSentKey] boolValue];
+	
+	[cell.textLabel setText:messageText];
+	[cell setSent:messageSent];
 	
 	return cell;
 }

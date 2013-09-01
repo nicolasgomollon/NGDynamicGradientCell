@@ -11,6 +11,8 @@
 		DACE578017D2C21B0030D3EC /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DACE577117D2C21B0030D3EC /* MasterViewController.m */; };
 		DACE578117D2C21B0030D3EC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DACE577317D2C21B0030D3EC /* main.m */; };
 		DACE578517D2C21B0030D3EC /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DACE577B17D2C21B0030D3EC /* Images.xcassets */; };
+		DACE578A17D2C57B0030D3EC /* bubble-min.png in Resources */ = {isa = PBXBuildFile; fileRef = DACE578817D2C57B0030D3EC /* bubble-min.png */; };
+		DACE578B17D2C57B0030D3EC /* bubble-min@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DACE578917D2C57B0030D3EC /* bubble-min@2x.png */; };
 		DACE578E17D2DEE90030D3EC /* NGDynamicGradientCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DACE578D17D2DEE90030D3EC /* NGDynamicGradientCell.m */; };
 		DACE57A017D2E2250030D3EC /* libSSToolkit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DACE579617D2E1D50030D3EC /* libSSToolkit.a */; };
 		DACE57A317D2E2250030D3EC /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DACE57A117D2E2250030D3EC /* MessageUI.framework */; };
@@ -79,6 +81,8 @@
 		DACE577417D2C21B0030D3EC /* NGDynamicGradientCell-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NGDynamicGradientCell-Prefix.pch"; sourceTree = "<group>"; };
 		DACE577B17D2C21B0030D3EC /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		DACE577C17D2C21B0030D3EC /* NGDynamicGradientCell-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "NGDynamicGradientCell-Info.plist"; sourceTree = "<group>"; };
+		DACE578817D2C57B0030D3EC /* bubble-min.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bubble-min.png"; sourceTree = "<group>"; };
+		DACE578917D2C57B0030D3EC /* bubble-min@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bubble-min@2x.png"; sourceTree = "<group>"; };
 		DACE578C17D2DEE90030D3EC /* NGDynamicGradientCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NGDynamicGradientCell.h; sourceTree = "<group>"; };
 		DACE578D17D2DEE90030D3EC /* NGDynamicGradientCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NGDynamicGradientCell.m; sourceTree = "<group>"; };
 		DACE578F17D2E1D40030D3EC /* SSToolkit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SSToolkit.xcodeproj; path = SSToolkit/SSToolkit.xcodeproj; sourceTree = "<group>"; };
@@ -148,6 +152,7 @@
 			children = (
 				DACE577C17D2C21B0030D3EC /* NGDynamicGradientCell-Info.plist */,
 				DACE577B17D2C21B0030D3EC /* Images.xcassets */,
+				DACE578717D2C57B0030D3EC /* Images */,
 			);
 			path = Resources;
 			sourceTree = SOURCE_ROOT;
@@ -159,6 +164,15 @@
 			);
 			path = Vendor;
 			sourceTree = SOURCE_ROOT;
+		};
+		DACE578717D2C57B0030D3EC /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				DACE578817D2C57B0030D3EC /* bubble-min.png */,
+				DACE578917D2C57B0030D3EC /* bubble-min@2x.png */,
+			);
+			path = Images;
+			sourceTree = "<group>";
 		};
 		DACE579017D2E1D40030D3EC /* Products */ = {
 			isa = PBXGroup;
@@ -346,6 +360,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DACE578B17D2C57B0030D3EC /* bubble-min@2x.png in Resources */,
+				DACE578A17D2C57B0030D3EC /* bubble-min.png in Resources */,
 				DACE578517D2C21B0030D3EC /* Images.xcassets in Resources */,
 				DAE1967017D2E28700F06E5D /* SSToolkitResources.bundle in Resources */,
 			);

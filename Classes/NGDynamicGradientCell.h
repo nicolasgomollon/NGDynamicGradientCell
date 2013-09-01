@@ -8,6 +8,21 @@
 
 #import <UIKit/UIKit.h>
 
-@interface NGDynamicGradientCell : UITableViewCell
+@interface NGDynamicGradientCell : UITableViewCell {
+	SSGradientView *gradientView;
+	UIView *grayView;
+	UILabel *messageLabel;
+	
+	UIImage *bubbleImage;
+	UIEdgeInsets bubbleEdgeInsetsSent;
+	UIEdgeInsets bubbleEdgeInsetsReceived;
+	
+	BOOL sent;
+}
+
+@property (nonatomic, assign, getter=isSent) BOOL sent;
+
++ (CGFloat)heightForMessage:(NSString *)message;
+- (void)setScrollViewContentOffset:(CGPoint)contentOffset;
 
 @end
