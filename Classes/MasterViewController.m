@@ -17,6 +17,12 @@
 	[super awakeFromNib];
 }
 
+- (void)loadView {
+	self.tableView = [[UITableView alloc] init];
+	[self.tableView setSeparatorStyle:UITableViewCellSeparatorStyleNone];
+	[self.tableView registerClass:[NGDynamicGradientCell class] forCellReuseIdentifier:@"Cell"];
+}
+
 - (void)viewDidLoad {
 	[super viewDidLoad];
 	
@@ -41,7 +47,7 @@
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-	UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell" forIndexPath:indexPath];
+	NGDynamicGradientCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell" forIndexPath:indexPath];
 	
 	NSDate *object = self.objects[indexPath.row];
 	cell.textLabel.text = [object description];

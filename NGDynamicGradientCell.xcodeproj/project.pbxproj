@@ -11,6 +11,7 @@
 		DACE578017D2C21B0030D3EC /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DACE577117D2C21B0030D3EC /* MasterViewController.m */; };
 		DACE578117D2C21B0030D3EC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DACE577317D2C21B0030D3EC /* main.m */; };
 		DACE578517D2C21B0030D3EC /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DACE577B17D2C21B0030D3EC /* Images.xcassets */; };
+		DACE578E17D2DEE90030D3EC /* NGDynamicGradientCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DACE578D17D2DEE90030D3EC /* NGDynamicGradientCell.m */; };
 		DAE58D5D17D2C0FA00260FE8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAE58D5C17D2C0FA00260FE8 /* Foundation.framework */; };
 		DAE58D5F17D2C0FA00260FE8 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAE58D5E17D2C0FA00260FE8 /* CoreGraphics.framework */; };
 		DAE58D6117D2C0FA00260FE8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAE58D6017D2C0FA00260FE8 /* UIKit.framework */; };
@@ -39,6 +40,8 @@
 		DACE577417D2C21B0030D3EC /* NGDynamicGradientCell-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NGDynamicGradientCell-Prefix.pch"; sourceTree = "<group>"; };
 		DACE577B17D2C21B0030D3EC /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		DACE577C17D2C21B0030D3EC /* NGDynamicGradientCell-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "NGDynamicGradientCell-Info.plist"; sourceTree = "<group>"; };
+		DACE578C17D2DEE90030D3EC /* NGDynamicGradientCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NGDynamicGradientCell.h; sourceTree = "<group>"; };
+		DACE578D17D2DEE90030D3EC /* NGDynamicGradientCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NGDynamicGradientCell.m; sourceTree = "<group>"; };
 		DAE58D5917D2C0FA00260FE8 /* NGDynamicGradientCell.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NGDynamicGradientCell.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DAE58D5C17D2C0FA00260FE8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		DAE58D5E17D2C0FA00260FE8 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -80,6 +83,8 @@
 				DACE576D17D2C21B0030D3EC /* AppDelegate.m */,
 				DACE577017D2C21B0030D3EC /* MasterViewController.h */,
 				DACE577117D2C21B0030D3EC /* MasterViewController.m */,
+				DACE578C17D2DEE90030D3EC /* NGDynamicGradientCell.h */,
+				DACE578D17D2DEE90030D3EC /* NGDynamicGradientCell.m */,
 			);
 			path = Classes;
 			sourceTree = SOURCE_ROOT;
@@ -263,6 +268,7 @@
 			files = (
 				DACE577E17D2C21B0030D3EC /* AppDelegate.m in Sources */,
 				DACE578117D2C21B0030D3EC /* main.m in Sources */,
+				DACE578E17D2DEE90030D3EC /* NGDynamicGradientCell.m in Sources */,
 				DACE578017D2C21B0030D3EC /* MasterViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

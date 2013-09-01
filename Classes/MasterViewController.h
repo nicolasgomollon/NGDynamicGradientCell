@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "NGDynamicGradientCell.h"
 
 @interface MasterViewController : UITableViewController {
 	NSMutableArray *objects;
