@@ -1,0 +1,458 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DACE577E17D2C21B0030D3EC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DACE576D17D2C21B0030D3EC /* AppDelegate.m */; };
+		DACE578017D2C21B0030D3EC /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DACE577117D2C21B0030D3EC /* MasterViewController.m */; };
+		DACE578117D2C21B0030D3EC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DACE577317D2C21B0030D3EC /* main.m */; };
+		DACE578517D2C21B0030D3EC /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DACE577B17D2C21B0030D3EC /* Images.xcassets */; };
+		DAE58D5D17D2C0FA00260FE8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAE58D5C17D2C0FA00260FE8 /* Foundation.framework */; };
+		DAE58D5F17D2C0FA00260FE8 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAE58D5E17D2C0FA00260FE8 /* CoreGraphics.framework */; };
+		DAE58D6117D2C0FA00260FE8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAE58D6017D2C0FA00260FE8 /* UIKit.framework */; };
+		DAE58D7F17D2C0FA00260FE8 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAE58D7E17D2C0FA00260FE8 /* XCTest.framework */; };
+		DAE58D8017D2C0FA00260FE8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAE58D5C17D2C0FA00260FE8 /* Foundation.framework */; };
+		DAE58D8117D2C0FA00260FE8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAE58D6017D2C0FA00260FE8 /* UIKit.framework */; };
+		DAE58D8B17D2C0FA00260FE8 /* NGDynamicGradientCellTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DAE58D8A17D2C0FA00260FE8 /* NGDynamicGradientCellTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DAE58D8217D2C0FA00260FE8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DAE58D5117D2C0FA00260FE8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DAE58D5817D2C0FA00260FE8;
+			remoteInfo = NGDynamicGradientCell;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		DACE576C17D2C21B0030D3EC /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		DACE576D17D2C21B0030D3EC /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		DACE577017D2C21B0030D3EC /* MasterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MasterViewController.h; sourceTree = "<group>"; };
+		DACE577117D2C21B0030D3EC /* MasterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MasterViewController.m; sourceTree = "<group>"; };
+		DACE577317D2C21B0030D3EC /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		DACE577417D2C21B0030D3EC /* NGDynamicGradientCell-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NGDynamicGradientCell-Prefix.pch"; sourceTree = "<group>"; };
+		DACE577B17D2C21B0030D3EC /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		DACE577C17D2C21B0030D3EC /* NGDynamicGradientCell-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "NGDynamicGradientCell-Info.plist"; sourceTree = "<group>"; };
+		DAE58D5917D2C0FA00260FE8 /* NGDynamicGradientCell.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NGDynamicGradientCell.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DAE58D5C17D2C0FA00260FE8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		DAE58D5E17D2C0FA00260FE8 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		DAE58D6017D2C0FA00260FE8 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		DAE58D7D17D2C0FA00260FE8 /* NGDynamicGradientCellTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NGDynamicGradientCellTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DAE58D7E17D2C0FA00260FE8 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		DAE58D8617D2C0FA00260FE8 /* NGDynamicGradientCellTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "NGDynamicGradientCellTests-Info.plist"; sourceTree = "<group>"; };
+		DAE58D8A17D2C0FA00260FE8 /* NGDynamicGradientCellTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NGDynamicGradientCellTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DAE58D5617D2C0FA00260FE8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DAE58D5F17D2C0FA00260FE8 /* CoreGraphics.framework in Frameworks */,
+				DAE58D6117D2C0FA00260FE8 /* UIKit.framework in Frameworks */,
+				DAE58D5D17D2C0FA00260FE8 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DAE58D7A17D2C0FA00260FE8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DAE58D7F17D2C0FA00260FE8 /* XCTest.framework in Frameworks */,
+				DAE58D8117D2C0FA00260FE8 /* UIKit.framework in Frameworks */,
+				DAE58D8017D2C0FA00260FE8 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DACE576B17D2C21B0030D3EC /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				DACE576C17D2C21B0030D3EC /* AppDelegate.h */,
+				DACE576D17D2C21B0030D3EC /* AppDelegate.m */,
+				DACE577017D2C21B0030D3EC /* MasterViewController.h */,
+				DACE577117D2C21B0030D3EC /* MasterViewController.m */,
+			);
+			path = Classes;
+			sourceTree = SOURCE_ROOT;
+		};
+		DACE577217D2C21B0030D3EC /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				DACE577417D2C21B0030D3EC /* NGDynamicGradientCell-Prefix.pch */,
+				DACE577317D2C21B0030D3EC /* main.m */,
+			);
+			path = "Other Sources";
+			sourceTree = SOURCE_ROOT;
+		};
+		DACE577517D2C21B0030D3EC /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				DACE577C17D2C21B0030D3EC /* NGDynamicGradientCell-Info.plist */,
+				DACE577B17D2C21B0030D3EC /* Images.xcassets */,
+			);
+			path = Resources;
+			sourceTree = SOURCE_ROOT;
+		};
+		DACE577D17D2C21B0030D3EC /* Vendor */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Vendor;
+			sourceTree = SOURCE_ROOT;
+		};
+		DAE58D5017D2C0FA00260FE8 = {
+			isa = PBXGroup;
+			children = (
+				DAE58D6217D2C0FA00260FE8 /* NGDynamicGradientCell */,
+				DAE58D8417D2C0FA00260FE8 /* NGDynamicGradientCellTests */,
+				DAE58D5B17D2C0FA00260FE8 /* Frameworks */,
+				DAE58D5A17D2C0FA00260FE8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DAE58D5A17D2C0FA00260FE8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DAE58D5917D2C0FA00260FE8 /* NGDynamicGradientCell.app */,
+				DAE58D7D17D2C0FA00260FE8 /* NGDynamicGradientCellTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DAE58D5B17D2C0FA00260FE8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DAE58D5C17D2C0FA00260FE8 /* Foundation.framework */,
+				DAE58D5E17D2C0FA00260FE8 /* CoreGraphics.framework */,
+				DAE58D6017D2C0FA00260FE8 /* UIKit.framework */,
+				DAE58D7E17D2C0FA00260FE8 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DAE58D6217D2C0FA00260FE8 /* NGDynamicGradientCell */ = {
+			isa = PBXGroup;
+			children = (
+				DACE576B17D2C21B0030D3EC /* Classes */,
+				DACE577217D2C21B0030D3EC /* Other Sources */,
+				DACE577517D2C21B0030D3EC /* Resources */,
+				DACE577D17D2C21B0030D3EC /* Vendor */,
+			);
+			path = NGDynamicGradientCell;
+			sourceTree = "<group>";
+		};
+		DAE58D8417D2C0FA00260FE8 /* NGDynamicGradientCellTests */ = {
+			isa = PBXGroup;
+			children = (
+				DAE58D8A17D2C0FA00260FE8 /* NGDynamicGradientCellTests.m */,
+				DAE58D8517D2C0FA00260FE8 /* Supporting Files */,
+			);
+			path = NGDynamicGradientCellTests;
+			sourceTree = "<group>";
+		};
+		DAE58D8517D2C0FA00260FE8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DAE58D8617D2C0FA00260FE8 /* NGDynamicGradientCellTests-Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DAE58D5817D2C0FA00260FE8 /* NGDynamicGradientCell */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DAE58D8E17D2C0FA00260FE8 /* Build configuration list for PBXNativeTarget "NGDynamicGradientCell" */;
+			buildPhases = (
+				DAE58D5517D2C0FA00260FE8 /* Sources */,
+				DAE58D5617D2C0FA00260FE8 /* Frameworks */,
+				DAE58D5717D2C0FA00260FE8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NGDynamicGradientCell;
+			productName = NGDynamicGradientCell;
+			productReference = DAE58D5917D2C0FA00260FE8 /* NGDynamicGradientCell.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DAE58D7C17D2C0FA00260FE8 /* NGDynamicGradientCellTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DAE58D9117D2C0FA00260FE8 /* Build configuration list for PBXNativeTarget "NGDynamicGradientCellTests" */;
+			buildPhases = (
+				DAE58D7917D2C0FA00260FE8 /* Sources */,
+				DAE58D7A17D2C0FA00260FE8 /* Frameworks */,
+				DAE58D7B17D2C0FA00260FE8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DAE58D8317D2C0FA00260FE8 /* PBXTargetDependency */,
+			);
+			name = NGDynamicGradientCellTests;
+			productName = NGDynamicGradientCellTests;
+			productReference = DAE58D7D17D2C0FA00260FE8 /* NGDynamicGradientCellTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DAE58D5117D2C0FA00260FE8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "Techno-Magic";
+				TargetAttributes = {
+					DAE58D7C17D2C0FA00260FE8 = {
+						TestTargetID = DAE58D5817D2C0FA00260FE8;
+					};
+				};
+			};
+			buildConfigurationList = DAE58D5417D2C0FA00260FE8 /* Build configuration list for PBXProject "NGDynamicGradientCell" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DAE58D5017D2C0FA00260FE8;
+			productRefGroup = DAE58D5A17D2C0FA00260FE8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DAE58D5817D2C0FA00260FE8 /* NGDynamicGradientCell */,
+				DAE58D7C17D2C0FA00260FE8 /* NGDynamicGradientCellTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DAE58D5717D2C0FA00260FE8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DACE578517D2C21B0030D3EC /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DAE58D7B17D2C0FA00260FE8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DAE58D5517D2C0FA00260FE8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DACE577E17D2C21B0030D3EC /* AppDelegate.m in Sources */,
+				DACE578117D2C21B0030D3EC /* main.m in Sources */,
+				DACE578017D2C21B0030D3EC /* MasterViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DAE58D7917D2C0FA00260FE8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DAE58D8B17D2C0FA00260FE8 /* NGDynamicGradientCellTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DAE58D8317D2C0FA00260FE8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DAE58D5817D2C0FA00260FE8 /* NGDynamicGradientCell */;
+			targetProxy = DAE58D8217D2C0FA00260FE8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		DAE58D8C17D2C0FA00260FE8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		DAE58D8D17D2C0FA00260FE8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DAE58D8F17D2C0FA00260FE8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Other Sources/NGDynamicGradientCell-Prefix.pch";
+				INFOPLIST_FILE = "$(SRCROOT)/Resources/NGDynamicGradientCell-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		DAE58D9017D2C0FA00260FE8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Other Sources/NGDynamicGradientCell-Prefix.pch";
+				INFOPLIST_FILE = "$(SRCROOT)/Resources/NGDynamicGradientCell-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		DAE58D9217D2C0FA00260FE8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/NGDynamicGradientCell.app/NGDynamicGradientCell";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "NGDynamicGradientCell/NGDynamicGradientCell-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "NGDynamicGradientCellTests/NGDynamicGradientCellTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		DAE58D9317D2C0FA00260FE8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/NGDynamicGradientCell.app/NGDynamicGradientCell";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "NGDynamicGradientCell/NGDynamicGradientCell-Prefix.pch";
+				INFOPLIST_FILE = "NGDynamicGradientCellTests/NGDynamicGradientCellTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DAE58D5417D2C0FA00260FE8 /* Build configuration list for PBXProject "NGDynamicGradientCell" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DAE58D8C17D2C0FA00260FE8 /* Debug */,
+				DAE58D8D17D2C0FA00260FE8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DAE58D8E17D2C0FA00260FE8 /* Build configuration list for PBXNativeTarget "NGDynamicGradientCell" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DAE58D8F17D2C0FA00260FE8 /* Debug */,
+				DAE58D9017D2C0FA00260FE8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DAE58D9117D2C0FA00260FE8 /* Build configuration list for PBXNativeTarget "NGDynamicGradientCellTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DAE58D9217D2C0FA00260FE8 /* Debug */,
+				DAE58D9317D2C0FA00260FE8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DAE58D5117D2C0FA00260FE8 /* Project object */;
+}
