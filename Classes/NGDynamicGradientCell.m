@@ -19,8 +19,8 @@
 		[self setSelectionStyle:UITableViewCellSelectionStyleNone];
 		
 		bubbleImage = [UIImage imageNamed:@"bubble-min.png"];
-		bubbleEdgeInsetsSent = UIEdgeInsetsMake(16.0f, 20.0f, 17.0f, 26.0f);
-		bubbleEdgeInsetsReceived = UIEdgeInsetsMake(16.0f, 26.0f, 17.0f, 20.0f);
+		bubbleEdgeInsetsSent = UIEdgeInsetsMake(17.0f, 20.0f, 17.0f, 26.0f);
+		bubbleEdgeInsetsReceived = UIEdgeInsetsMake(17.0f, 26.0f, 17.0f, 20.0f);
 		
 		gradientView = [[SSGradientView alloc] initWithFrame:[UIScreen mainScreen].bounds];
 		[gradientView setColors:@[RGBA(90.0f, 200.0f, 250.0f, 1.0f), RGBA(0.0f, 122.0f, 255.0f, 1.0f)]];
@@ -51,7 +51,7 @@
 											attributes:@{NSFontAttributeName : messageFont}
 											   context:nil].size;
 	
-	CGFloat messageHeight = MAX(35.0f, 10.0f + messageSize.height + 5.0f);
+	CGFloat messageHeight = MAX(35.0f, 10.0f + roundf(messageSize.height) + 5.0f);
 	
 	return messageHeight + 9.0f;
 }
@@ -68,21 +68,21 @@
 }
 
 - (void)setScrollViewContentOffset:(CGPoint)contentOffset {
-	CGFloat messageWidth = MAX(48.0f, 13.0f + messageLabel.frame.size.width + 18.0f);
-	CGFloat messageHeight = MAX(35.0f, 10.0f + messageLabel.frame.size.height + 5.0f);
+	CGFloat messageWidth = MAX(48.0f, 13.0f + roundf(messageLabel.frame.size.width) + 18.0f);
+	CGFloat messageHeight = MAX(35.0f, 10.0f + roundf(messageLabel.frame.size.height) + 5.0f);
 	CGSize messageSize = CGSizeMake(messageWidth, messageHeight);
 	
 	UIImage *maskImage = bubbleImage;
 	CALayer *maskLayer = [CALayer layer];
 	
 	if (self.sent) {
-		[gradientView setFrame:CGRectMake(gradientView.frame.origin.x, contentOffset.y - self.frame.origin.y, gradientView.frame.size.width, gradientView.frame.size.height)];
+		[gradientView setFrame:CGRectMake(gradientView.frame.origin.x, roundf(contentOffset.y) - self.frame.origin.y, gradientView.frame.size.width, gradientView.frame.size.height)];
 		
 		maskImage = [maskImage resizableImageWithCapInsets:bubbleEdgeInsetsSent];
 		maskImage = [self imageWithImage:maskImage scaledToSize:messageSize];
 		
 		[maskLayer setContents:(id)maskImage.CGImage];
-		[maskLayer setFrame:CGRectMake(self.bounds.size.width - messageSize.width - 10.0f, self.frame.origin.y - contentOffset.y, messageSize.width, messageSize.height)];
+		[maskLayer setFrame:CGRectMake(self.bounds.size.width - messageSize.width - 10.0f, self.frame.origin.y - roundf(contentOffset.y), messageSize.width, messageSize.height)];
 		
 		[gradientView.layer setMask:maskLayer];
 	} else {
