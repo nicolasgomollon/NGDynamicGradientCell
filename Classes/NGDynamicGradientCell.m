@@ -27,8 +27,9 @@
 		[gradientView setAlpha:0.0f];
 		[self.contentView addSubview:gradientView];
 		
-		grayView = [[UIView alloc] initWithFrame:CGRectZero];
-		[grayView setBackgroundColor:RGBA(229.0f, 229.0f, 234.0f, 1.0f)];
+		grayView = [[UIImageView alloc] initWithFrame:CGRectZero];
+		[grayView setBackgroundColor:[UIColor clearColor]];
+		[grayView setTintColor:RGBA(229.0f, 229.0f, 234.0f, 1.0f)];
 		[grayView setAlpha:0.0f];
 		[self.contentView addSubview:grayView];
 		
@@ -91,11 +92,9 @@
 		maskImage = [UIImage imageWithCGImage:maskImage.CGImage scale:maskImage.scale orientation:UIImageOrientationUpMirrored];
 		maskImage = [maskImage resizableImageWithCapInsets:bubbleEdgeInsetsReceived];
 		maskImage = [self imageWithImage:maskImage scaledToSize:messageSize];
+		maskImage = [maskImage imageWithRenderingMode:UIImageRenderingModeAlwaysTemplate];
 		
-		[maskLayer setContents:(id)maskImage.CGImage];
-		[maskLayer setFrame:grayView.bounds];
-		
-		[grayView.layer setMask:maskLayer];
+		[grayView setImage:maskImage];
 	}
 }
 

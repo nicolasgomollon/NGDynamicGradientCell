@@ -10,7 +10,7 @@
 
 @interface NGDynamicGradientCell : UITableViewCell {
 	SSGradientView *gradientView;
-	UIView *grayView;
+	UIImageView *grayView;
 	UILabel *messageLabel;
 	
 	UIImage *bubbleImage;
