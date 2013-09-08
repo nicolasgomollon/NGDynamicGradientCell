@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DA9A0F9117DC887400306456 /* mask-bubble-min.png in Resources */ = {isa = PBXBuildFile; fileRef = DA9A0F8D17DC887400306456 /* mask-bubble-min.png */; };
+		DA9A0F9217DC887400306456 /* mask-bubble-min@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DA9A0F8E17DC887400306456 /* mask-bubble-min@2x.png */; };
+		DA9A0F9817DC8CA300306456 /* mask-fill.png in Resources */ = {isa = PBXBuildFile; fileRef = DA9A0F9617DC8CA300306456 /* mask-fill.png */; };
+		DA9A0F9917DC8CA300306456 /* mask-fill@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DA9A0F9717DC8CA300306456 /* mask-fill@2x.png */; };
 		DACE577E17D2C21B0030D3EC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DACE576D17D2C21B0030D3EC /* AppDelegate.m */; };
 		DACE578017D2C21B0030D3EC /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DACE577117D2C21B0030D3EC /* MasterViewController.m */; };
 		DACE578117D2C21B0030D3EC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DACE577317D2C21B0030D3EC /* main.m */; };
@@ -73,6 +77,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DA9A0F8D17DC887400306456 /* mask-bubble-min.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mask-bubble-min.png"; sourceTree = "<group>"; };
+		DA9A0F8E17DC887400306456 /* mask-bubble-min@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mask-bubble-min@2x.png"; sourceTree = "<group>"; };
+		DA9A0F9617DC8CA300306456 /* mask-fill.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mask-fill.png"; sourceTree = "<group>"; };
+		DA9A0F9717DC8CA300306456 /* mask-fill@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mask-fill@2x.png"; sourceTree = "<group>"; };
 		DACE576C17D2C21B0030D3EC /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		DACE576D17D2C21B0030D3EC /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		DACE577017D2C21B0030D3EC /* MasterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MasterViewController.h; sourceTree = "<group>"; };
@@ -170,6 +178,10 @@
 			children = (
 				DACE578817D2C57B0030D3EC /* bubble-min.png */,
 				DACE578917D2C57B0030D3EC /* bubble-min@2x.png */,
+				DA9A0F8D17DC887400306456 /* mask-bubble-min.png */,
+				DA9A0F8E17DC887400306456 /* mask-bubble-min@2x.png */,
+				DA9A0F9617DC8CA300306456 /* mask-fill.png */,
+				DA9A0F9717DC8CA300306456 /* mask-fill@2x.png */,
 			);
 			path = Images;
 			sourceTree = "<group>";
@@ -361,9 +373,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				DACE578B17D2C57B0030D3EC /* bubble-min@2x.png in Resources */,
+				DA9A0F9917DC8CA300306456 /* mask-fill@2x.png in Resources */,
+				DA9A0F9117DC887400306456 /* mask-bubble-min.png in Resources */,
 				DACE578A17D2C57B0030D3EC /* bubble-min.png in Resources */,
 				DACE578517D2C21B0030D3EC /* Images.xcassets in Resources */,
 				DAE1967017D2E28700F06E5D /* SSToolkitResources.bundle in Resources */,
+				DA9A0F9217DC887400306456 /* mask-bubble-min@2x.png in Resources */,
+				DA9A0F9817DC8CA300306456 /* mask-fill.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

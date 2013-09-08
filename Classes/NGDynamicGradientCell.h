@@ -8,12 +8,16 @@
 
 #import <UIKit/UIKit.h>
 
+#define kBubbleEdgeInset 10.0f
+#define kMessagePadding   9.0f
+
 @interface NGDynamicGradientCell : UITableViewCell {
-	SSGradientView *gradientView;
 	UIImageView *grayView;
 	UILabel *messageLabel;
 	
+	UIImage *maskFill;
 	UIImage *bubbleImage;
+	UIImage *bubbleMaskImage;
 	UIEdgeInsets bubbleEdgeInsetsSent;
 	UIEdgeInsets bubbleEdgeInsetsReceived;
 	
@@ -23,6 +27,5 @@
 @property (nonatomic, assign, getter=isSent) BOOL sent;
 
 + (CGFloat)heightForMessage:(NSString *)message;
-- (void)setScrollViewContentOffset:(CGPoint)contentOffset;
 
 @end

@@ -16,15 +16,28 @@ NSString *const NGMessageSentKey = @"sent";
 @synthesize objects;
 
 
-- (void)awakeFromNib {
-	[super awakeFromNib];
-}
-
 - (void)loadView {
-	[self setTitle:@"NGDynamicGradientCell"];
+	[super loadView];
 	
+	[self setTitle:@"NGDynamicGradientCell"];
 	self.tableView = [[UITableView alloc] init];
-	[self.tableView setContentInset:UIEdgeInsetsMake(9.0f, 0.0f, 0.0f, 0.0f)];
+	
+	// This is the gradient that will be shown behind the sent message bubbles.
+	SSGradientView *gradientView = [[SSGradientView alloc] initWithFrame:[UIScreen mainScreen].bounds];
+	[gradientView setColors:@[RGBA(90.0f, 200.0f, 250.0f, 1.0f), RGBA(0.0f, 122.0f, 255.0f, 1.0f)]];
+	[self.tableView setBackgroundView:gradientView];
+	[self.tableView setBackgroundColor:[UIColor clearColor]];
+	
+	// We need white header and footer views for our table view to cover the gradient in the background.
+	UIView *tableHeaderView = [[UIView alloc] initWithFrame:[UIScreen mainScreen].bounds];
+	[tableHeaderView setBackgroundColor:[UIColor whiteColor]];
+	[self.tableView setTableHeaderView:tableHeaderView];
+	
+	UIView *tableFooterView = [[UIView alloc] initWithFrame:[UIScreen mainScreen].bounds];
+	[tableFooterView setBackgroundColor:[UIColor whiteColor]];
+	[self.tableView setTableFooterView:tableFooterView];
+	
+	[self.tableView setContentInset:UIEdgeInsetsMake(kMessagePadding - tableHeaderView.bounds.size.height, 0.0f, -tableFooterView.bounds.size.height, 0.0f)];
 	[self.tableView setSeparatorStyle:UITableViewCellSeparatorStyleNone];
 	[self.tableView registerClass:[NGDynamicGradientCell class] forCellReuseIdentifier:@"Cell"];
 }
@@ -54,14 +67,6 @@ NSString *const NGMessageSentKey = @"sent";
 - (void)didReceiveMemoryWarning {
 	[super didReceiveMemoryWarning];
 	// Dispose of any resources that can be recreated.
-}
-
-
-#pragma mark - Scroll View
-
-- (void)scrollViewDidScroll:(UIScrollView *)scrollView {
-	for (NGDynamicGradientCell *cell in [self.tableView visibleCells])
-		[cell setScrollViewContentOffset:scrollView.contentOffset];
 }
 
 
