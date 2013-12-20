@@ -134,6 +134,14 @@
 		maskImage = [maskImage imageWithRenderingMode:UIImageRenderingModeAlwaysTemplate];
 		
 		[grayView setImage:maskImage];
+		
+		UIImage *maskFillImage = [self imageWithImage:maskFill scaledToSize:self.bounds.size];
+		CALayer *maskLayer = [CALayer layer];
+		
+		[maskLayer setContents:(id)maskFillImage.CGImage];
+		[maskLayer setFrame:self.bounds];
+		
+		[self.layer setMask:maskLayer];
 	}
 	
 	[messageLabel setAlpha:!self.sent];

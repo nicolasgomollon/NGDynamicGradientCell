@@ -97,6 +97,8 @@ NSString *const NGMessageSentKey = @"sent";
 	[cell.textLabel setText:messageText];
 	[cell setSent:messageSent];
 	
+	[cell setNeedsDisplay];
+	
 	return cell;
 }
 
